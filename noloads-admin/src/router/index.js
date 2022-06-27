@@ -71,13 +71,13 @@ export const constantRoutes = [
         path: 'list',
         name: 'coreIntegralGradeList', //每个路由节点的name的名字不能相同
         component: () => import('@/views/core/integral-grade/list'), //指向template模板组件
-        meta: { title: '积分等级列表' }, //定义导航的标题
+        meta: { title: '积分等级列表', icon: 'el-icon-folder' }, //定义导航的标题
       },
       {
         path: 'create',
         name: 'coreIntegralGradeCreate',
         component: () => import('@/views/core/integral-grade/form'),
-        meta: { title: '新增积分等级' },
+        meta: { title: '新增积分等级', icon: 'el-icon-folder-add' },
       },
       {
         path: 'edit/:id', // :id 是一个占位符，表示这部分url会是任何一个id
